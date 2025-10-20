@@ -1,0 +1,38 @@
+.modal-content {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: scale(0.95);
+}
+.modal-content.show {
+  opacity: 1;
+  transform: scale(1);
+}
+#cartPanel {
+  transition: transform 0.3s ease-in-out;
+}
+#cartPanel.open {
+  transform: translateX(0);
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
